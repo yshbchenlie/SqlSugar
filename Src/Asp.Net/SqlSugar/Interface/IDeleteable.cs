@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SqlSugar
 {
-    public interface IDeleteable<T> where T : class, new()
+    public partial interface IDeleteable<T> where T : class, new()
     {
         DeleteBuilder DeleteBuilder { get; set; }
         int ExecuteCommand();

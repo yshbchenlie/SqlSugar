@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SqlSugar
 {
-    public class InsertableProvider<T> : IInsertable<T> where T : class, new()
+    public partial class InsertableProvider<T> : IInsertable<T> where T : class, new()
     {
         public SqlSugarClient Context { get; set; }
         public IAdo Ado { get { return Context.Ado; } }

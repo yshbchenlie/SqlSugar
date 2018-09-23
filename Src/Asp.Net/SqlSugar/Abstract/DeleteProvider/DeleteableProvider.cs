@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SqlSugar
 {
-    public class DeleteableProvider<T> : IDeleteable<T> where T : class, new()
+    public partial class DeleteableProvider<T> : IDeleteable<T> where T : class, new()
     {
         public SqlSugarClient Context { get; set; }
         public IAdo Db { get { return Context.Ado; } }

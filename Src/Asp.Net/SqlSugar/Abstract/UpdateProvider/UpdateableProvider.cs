@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SqlSugar
 {
-    public class UpdateableProvider<T> : IUpdateable<T> where T : class, new()
+    public partial class UpdateableProvider<T> : IUpdateable<T> where T : class, new()
     {
         public SqlSugarClient Context { get; internal set; }
         public EntityInfo EntityInfo { get; internal set; }
