@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
 using SqlSugar;
 
 namespace SqlSugarEx.Provider
 {
-   public class ExSqlServerProvider : SqlServerProvider
+    public class ExSqlServerProvider : SqlServerProvider
     {
         private readonly ConnectionType _connectionType;
         public ExSqlServerProvider(ConnectionType connectionType)
